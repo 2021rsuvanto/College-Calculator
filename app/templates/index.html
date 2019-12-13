@@ -1,0 +1,112 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="/../static/style.css">
+        <title>College Calculator!</title>
+    </head>
+    <body>
+        <h1>Calculate your chances of getting into an Ivy League University!</h1>
+        <p>Just enter a few pieces of information and this website will tell you how likely it is you will get into a prestigious school like an ivy league.</p>
+        <form action = "/collegecalculator" method="post">
+          <p>What is your name?</p>
+          <input type="text" name="name" value="Enter your name."/>
+          <p>Choose your dream ivy league.</p>
+            <input type="radio" name="school" value="Harvard"> Harvard<br>
+            <input type="radio" name="school" value="Dartmouth"> Dartmouth<br>
+            <input type="radio" name="school" value="Brown"> Brown<br>
+            <input type="radio" name="school" value="Princeton"> Princeton<br>
+            <input type="radio" name="school" value="Columbia"> Columbia<br>
+            <input type="radio" name="school" value="Cornell"> Cornell<br>
+            <input type="radio" name="school" value="Yale"> Yale<br>
+            <input type="radio" name="school" value="University of Pennsylvania"> University of Pennsylvania<br>
+            <p>Input your SAT or ACT Score.</p>
+            <input type="radio" name="testtype" value="SAT"> SAT<br>
+            <input type="radio" name="testtype" value="ACT"> ACT<br>
+            <br>
+            <input type="text" name="score" value="Enter your score"<br>
+            <p>Please enter your GPA using the table below: </p>
+            <table style="width:25%">
+  <tr>
+    <th align= left>Letter Grade</th>
+    <th align= left>Number Grade</th>
+    <th align= left>GPA</th>
+  </tr>
+  <tr>
+    <td>A+</td>
+    <td>97-100</td>
+    <td>4.00</td>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>94-97</td>
+    <td>4.00</td>
+  </tr>
+              <tr>
+    <td>A-</td>
+    <td>90-93</td>
+    <td>3.67</td>
+  </tr>
+              <tr>
+    <td>B+</td>
+    <td>87-89</td>
+    <td>3.33</td>
+  </tr>
+              <tr>
+    <td>B</td>
+    <td>83-86</td>
+    <td>3.00</td>
+  </tr>
+                <tr>
+    <td>B-</td>
+    <td>80-82</td>
+    <td>2.67</td>
+           </tr>
+              <tr>
+    <td>C+</td>
+    <td>77-79</td>
+   <td>2.33</td>
+              </tr>
+
+    <tr>
+    <td>C</td>
+    <td>74-76</td>
+   <td>2.00</td>
+              </tr>
+
+  <tr>
+    <td>C-</td>
+    <td>70-73</td>
+   <td>1.67</td>
+</tr>
+
+<tr>
+    <td>D+</td>
+    <td>67-69</td>
+   <td>1.33</td>
+              </tr>
+              <tr>
+              <td>D</td>
+              <td>63-66</td>
+              <td>1.00</td>
+              </tr>
+
+              <tr>
+              <td>D-</td>
+              <td>60-62</td>
+              <td>.67</td>
+              </tr>
+
+              <tr>
+              <td>F</td>
+              <td>Below 60</td>
+              <td>0.00</td>
+              </tr>
+
+
+</table>
+
+<input type="text" name="GPA" value="Enter your GPA."/>
+<input type="submit" value="Calculate!"/>
+
+        </form>
+    </body>
+</html>
