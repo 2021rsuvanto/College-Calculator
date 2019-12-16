@@ -36,10 +36,10 @@ print (listofcolleges)
 from app import routes
 
 
-def iterate(school, ACTscore, SATscore, GPA, testtype):
+def iterate(testtype, GPA, school, SATscore, ACTscore):
     for item in listofcolleges:
-        x = str(item.SATscore - SATscore)
-        y = str(item.ACTscore - ACTscore)
+        x = str(item.SATscore - int(SATscore))
+        y = str(item.ACTscore - int(ACTscore))
         if item.school == school:
             if testtype == "SAT":
                 if item.SATscore <= SATscore:
@@ -57,6 +57,6 @@ def GPAAA(school, ACTscore, SATscore, GPA, testtype):
         G = item.GPA - GPA
         if item.school == school:
             if item.GPA <= GPA:
-                print("Great job! Your GPA is among the average "+ item.school + " students!")
+                return("Great job! Your GPA is among the average "+ item.school + " students!")
             elif item.GPA > GPA:
-                print("You might want to improve your GPA. The school average is " + G + " points higher.")
+                return("You might want to improve your GPA. The school average is " + G + " points higher.")

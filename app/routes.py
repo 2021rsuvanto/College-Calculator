@@ -24,12 +24,16 @@ def collegecalculator():
     print(GPA)
     print("Your dream school is " + school + ".")
 
-    # output = model.scorecalculator(testtype, score, GPA, school)
-    #
-    # return render_template('results.html', name = name, GPA = GPA, output = output)
-    # return "Keep at it!"
-@app.route('/results')
-def results():
+    output = model.iterate(testtype, GPA, school, score, score)
+    output2 = model.GPAAA(school, score, score, GPA, testtype)
+    print (output)
+    print (output2)
+    return render_template('results.html', school = school, GPA = GPA, output = output, output2 = output2)
+    # return render_template('results.html', school = school, GPA = GPA, output = output, output2 = output2)
+    return "Keep at it!"
+
+    @app.route('/results')
+    def results():
         output = model.iterate(school, score, score, GPA, testtype)
         return output
         output2 = model.GPAAA(school, score, score, GPA, testtype)
